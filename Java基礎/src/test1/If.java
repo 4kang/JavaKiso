@@ -22,8 +22,6 @@ public class If {
 			System.out.println("鍵が合わないようだ。");
 		}
 		
-		
-
 	}
 
 }
