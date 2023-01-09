@@ -7,6 +7,12 @@ public class If {
 	public static void main(String[] args) {
 		// TODO 自動生成されたメソッド・スタブ
 		
+		int x = 10;
+		if(x == 10) {
+			System.out.println("xは10です");
+		}
+		
+		
 		System.out.println("-------------------");
 		System.out.println("鍵がかかっている。");
 		System.out.println("「どの鍵を使おうか？」");
