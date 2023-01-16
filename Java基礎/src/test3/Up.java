@@ -12,7 +12,7 @@ public class Up {
 		
 		System.out.println("ステータス");
 		System.out.println("名前：" + set.getName());
-		System.out.println(set.getMoney() + "円");
+		System.out.println("所持金：" + set.getMoney() + "円");
 		System.out.println("HP：" + set.getHp());
 
 	}

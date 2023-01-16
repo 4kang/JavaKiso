@@ -37,4 +37,6 @@ public class Setget {
 	public void setHp(int hp) {
 		this.hp = hp;
 	}
+	
+	
 }
