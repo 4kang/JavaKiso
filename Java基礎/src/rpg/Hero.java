@@ -7,9 +7,9 @@ public class Hero {
 
 	}*/
 	
-	private String name;
-	private int attac;
-	private int hp;
+	private String name; //主人公の名前
+	private int attac; //攻撃力
+	private int hp; //体力
 	
 	
 	public String getName() {
