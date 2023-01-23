@@ -17,6 +17,7 @@ public class Rpg {
 		satan.setHp(200);
 		
 		System.out.println("彼の名前は" + shujinko.getName());
+		
 
 	}
 

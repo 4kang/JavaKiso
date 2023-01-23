@@ -19,5 +19,7 @@ public class Maou {
 	public void setAttac(int attac) {
 		this.attac = attac;
 	}
+	
+	
 
 }
