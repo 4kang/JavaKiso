@@ -6,6 +6,7 @@ public class Hero {
 	private String name; //主人公の名前
 	private int attac; //攻撃力
 	private int hp; //体力
+	private String items;
 	
 	
 	public String getName() {
@@ -30,7 +31,7 @@ public class Hero {
 	}
 	
 	
-	public void addItem() {
+	public void addItem(String items) {
 		
 	}
 	
