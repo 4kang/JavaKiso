@@ -1,46 +1,31 @@
 package methodclass;
 
 public class Main {
-
 	public static void main(String[] args) {
 		
-		//メソッド名
-		hello();
-		hello("Lumine");
-		charaSte("☆5片手剣",520);
-		printPrice("ピザ",3000);
-		
-		int total = add(7,5);
-		System.out.println(total);
-		
-		System.out.println(average(3,8));
+		printData(fullName("ライザ","ヘレティック"),27,1.8,76.5);
+		printData(fullName("ジョン","クリストファー","スミス"),65,1.75,80.0);
 	}
 	
-	//クラスの中にメソッドを定義
-	public static void hello() {
-		System.out.println("ログイン");
-	}
-	public static void hello(String name) {
-		//実行する処理
-		System.out.println(name + "さんこんにちは");
-	}
-	
-	public static void charaSte(String buki, int status) {
-		System.out.println(buki + "の基礎攻撃力は" + status +"です");
+	public static void printData(String name, int age,double height,double weight) {
+		System.out.println("私の名前は" + name + "です");
+		System.out.println("年齢は" + age + "歳です");
+		System.out.println("身長は" + height + "mです");
+		System.out.println("体重は" + weight + "㎏です");
+		double bmi = bmi(height,weight);
+		System.out.println("BMIは" + bmi + "です");
 	}
 	
-	public static void printPrice(String item, int status) {
-		System.out.println(item + "は" + status + "円です");
+	public static String fullName(String firstName,String lastName) {
+		return firstName + " " + lastName;
 	}
 	
-	public static double average(int a, int b) {
-		int total = add(a,b);
-		return (double)total/2;
+	public static String fullName(String firstName,String middleName,String lastName) {
+		return firstName + " " + middleName + " " + lastName;
 	}
 	
-	//戻り値
-	public static int add(int a, int b) {
-		return a+b;
+	public static double bmi(double height,double weight) {
+		return weight/height/weight;
 	}
-
+	
 } //classMain
