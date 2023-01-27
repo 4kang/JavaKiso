@@ -1,5 +1,7 @@
 package methodclass;
 
+import java.util.Scanner;
+
 public class Lesson {
 
 public static void main(String[] args) {
@@ -22,6 +24,20 @@ public static void main(String[] args) {
 		}else {
 			System.out.println(number + "は奇数です");
 		}
+		
+		//Scanner
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("あなたの名前："); //printは改行しない
+		String name = scanner.next();
+		
+		System.out.println("あなたの名前は" + name + "です");
+		
+		System.out.print("年齢：");
+		int age = scanner.nextInt();
+		System.out.print("体重：");
+		double weight = scanner.nextDouble();
+		System.out.println("あなたの年齢は" + age + "歳です");
+		System.out.println("あなたの体重は" + weight + "㎏です");
 	}
 	
 	//クラスの中にメソッドを定義
