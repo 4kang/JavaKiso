@@ -3,6 +3,7 @@ package progete;
 public class Person {
 	//インスタンスフィールド
 	public String firstName;
+	public String middleName;
 	public String lastName;
 	public int age;
 	public double height;
@@ -27,8 +28,19 @@ public class Person {
 		Person.count ++;
 	}
 	
+	Person(String firstName, String middleName, String lastName, int age, double height, double weight){
+		//他のコンストラクタを呼び出す
+		this(firstName,lastName,age,height,weight);
+		this.middleName = middleName;
+	}
+	
 	public String fullName() {
-		return this.firstName + " " + this.lastName;
+		//middleNameがnullかどうかによって返す値を変えるようにする
+		if(this.middleName == null) {
+			return this.firstName + "" + this.lastName;
+		}else {
+			return this.firstName + "" + this.middleName + "" +lastName;
+		}
 	}
 	
 	public double bmi() {
