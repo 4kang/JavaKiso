@@ -9,7 +9,7 @@ public class Hukushu {
 	public double height;
 	public double weight;
 
-	
+	//sss
 	Hukushu(String firstName, String lastName, int age, double height, double weight){
 		this.firstName = firstName;
 		this.lastName = lastName;
