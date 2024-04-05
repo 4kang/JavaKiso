@@ -52,7 +52,7 @@ public class MatomeController {
 		}
 		
 		//IDとパスワードのチェック
-		if("schoo".equals(loginForm).getLoginId())&&
+		if("schoo".equals(loginForm.getLoginId()) &&
 		   "pass".equals(loginForm.getLoginPassword())){
 			session.setAttribute("userName", "スクー太郎");
 			return "login";
